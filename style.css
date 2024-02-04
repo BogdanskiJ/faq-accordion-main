@@ -10,7 +10,7 @@
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	transform: translate(-50%, 20px);
+	transform: translate(-50%, 100px);
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
@@ -29,7 +29,7 @@ body {
 	height: 100%;
 	background-image: url("./assets/images/background-pattern-desktop.svg");
 	background-position: top;
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 }
 
 .outerBox {
@@ -47,6 +47,7 @@ body {
 	border-radius: 15px;
 	background: white;
 	min-height: 50%;
+	margin: 20px;
 }
 
 .titleBox {
@@ -78,6 +79,18 @@ body {
 	border-bottom: 1px solid hsl(275, 100%, 97%);
 	gap: 20px;
 	cursor: pointer;
+
+	&:hover {
+		& span {
+			color: hsl(292, 16%, 49%) !important;
+		}
+	}
+
+	&:active {
+		& span {
+			color: hsl(292, 16%, 69%) !important;
+		}
+	}
 }
 
 .quest {
